@@ -14,3 +14,7 @@ a{
 h4{
     font-size: 25px;
 }
+
+input[type=number] {
+    appearance: none;
+  }
