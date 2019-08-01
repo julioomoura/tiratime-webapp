@@ -20,6 +20,7 @@ botaoAdicionar.onclick = function () {
 
 botaoSortear.onclick = function(){
     sorteadosElement.innerHTML = ''
+    jogadores = []
     elementoJogadores = document.getElementsByClassName('jogador')
     var novosJogadores = Array.from(elementoJogadores)
     novosJogadores.forEach(element => {
@@ -36,7 +37,7 @@ botaoSortear.onclick = function(){
             time.appendChild(texto)
         }
         var texto = document.createTextNode(element)
-        var jogador = document.createElement('h5')
+        var jogador = document.createElement('li')
         sorteadosElement.appendChild(jogador)
         jogador.appendChild(texto)
     });
