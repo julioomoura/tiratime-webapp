@@ -15,12 +15,30 @@ h4{
     font-size: 25px;
 }
 
+#entradas{
+    margin-left: 10px;
+    display: inline;
+}
+
 input[type=number] {
     appearance: none;
+    width: 50px;
   }
+
+#adicionar-jogador{
+    margin: 25px;
+}
+
+.jogador{
+    margin: 10px;
+}
 
 #sorteados{
     margin-left: 25px;
     margin-top: 10px;
     list-style-type: none;
+}
+
+#sortear{
+    margin: 10px;
 }

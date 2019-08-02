@@ -9,14 +9,22 @@ var jogadores = []
 
 botaoAdicionar.onclick = function () {
     divAdicionar.innerHTML = ''
-    for (var i = 0; i < numeroDeJogadores.value; i++) {
-        var item = document.createElement('input')
-        var atributo = document.createAttribute('class')
-        atributo.value = 'jogador'
-        item.setAttributeNode(atributo)
-        divAdicionar.appendChild(item)
+    if (jogadoresPorTime.value && numeroDeJogadores.value) {
+        var titulo = document.createTextNode('Nome dos jogadores: ')
+        var htmltitulo = document.createElement('h3')
+        htmltitulo.appendChild(titulo)
+        divAdicionar.appendChild(htmltitulo)
+
+        for (var i = 0; i < numeroDeJogadores.value; i++) {
+            var item = document.createElement('input')
+            var atributo = document.createAttribute('class')
+            atributo.value = 'jogador'
+            item.setAttributeNode(atributo)
+            divAdicionar.appendChild(item)
+        }
     }
 }
+
 
 botaoSortear.onclick = function () {
     sorteadosElement.innerHTML = ''
