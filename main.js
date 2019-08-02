@@ -28,10 +28,12 @@ botaoSortear.onclick = function () {
     });
     jogadores = shuffle(jogadores)
     var contador = -1
+    var numeroTime = 1
     jogadores.forEach(element => {
         contador++
         if (contador % jogadoresPorTime.value == 0 || contador == 0) {
-            var texto = document.createTextNode("Time")
+            var texto = document.createTextNode("Time " + numeroTime)
+            numeroTime++
             var time = document.createElement('h4')
             sorteadosElement.appendChild(time)
             time.appendChild(texto)

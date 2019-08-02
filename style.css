@@ -18,3 +18,9 @@ h4{
 input[type=number] {
     appearance: none;
   }
+
+#sorteados{
+    margin-left: 25px;
+    margin-top: 10px;
+    list-style-type: none;
+}
